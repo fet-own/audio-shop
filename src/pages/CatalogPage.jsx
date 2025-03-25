@@ -13,7 +13,7 @@ const CatalogPage = () => {
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 9; // Показываем 9 товаров на страницу
+  const productsPerPage = 8;
   const totalPages = Math.ceil(products.length / productsPerPage);
 
   const handlePageChange = (page) => {
@@ -42,19 +42,17 @@ const CatalogPage = () => {
               compareList={compareList}
               favoritesList={favoritesList}
             />
-            {totalPages > 1 && ( // Убедимся, что пагинация отображается только если страниц больше 1
-              <div className={styles.pagination}>
-                {Array.from({ length: totalPages }, (_, index) => (
-                  <button
-                    key={index + 1}
-                    onClick={() => handlePageChange(index + 1)}
-                    className={currentPage === index + 1 ? styles.activePage : ""}
-                  >
-                    {index + 1}
-                  </button>
-                ))}
-              </div>
-            )}
+            <div className={styles.pagination}>
+              {Array.from({ length: totalPages }, (_, index) => (
+                <button
+                  key={index + 1}
+                  onClick={() => handlePageChange(index + 1)}
+                  className={currentPage === index + 1 ? styles.activePage : ""}
+                >
+                  {index + 1}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>

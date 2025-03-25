@@ -32,29 +32,37 @@
 .pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  /* Добавим отступ снизу */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px;
+  background: #ffffff;
+  /* Белый фон */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Тень, как у карточек */
 }
 
 .pagination button {
-  padding: 10px 15px;
+  padding: 8px 12px;
   border: none;
   border-radius: 4px;
   background: #d9d9d9;
   color: #1a1a1a;
   font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.1s ease;
 }
 
 .pagination button:hover {
   background: #c0c0c0;
+  transform: translateY(-2px);
 }
 
 .activePage {
-  background: #ff6b00 !important;
+  background: linear-gradient(90deg, #ff6b00 0%, #ffa800 100%) !important;
   color: #ffffff !important;
 }
 
@@ -69,5 +77,16 @@
 
   .title {
     font-size: 28px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+
+    gap: 8px;
+  }
+
+  .pagination button {
+    padding: 6px 10px;
+    font-size: 12px;
   }
 }

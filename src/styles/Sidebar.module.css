@@ -1,0 +1,85 @@
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background: #ffffff;
+  /* Белый фон, как на скриншоте */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Тень, как у карточек товаров */
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.filterGroup {
+  margin-bottom: 20px;
+}
+
+.filterGroup label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filterGroup select,
+.filterGroup input[type="range"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.priceRange {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666666;
+  margin-top: 5px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox label {
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.applyButton {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #ff6b00 0%, #ffa800 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.applyButton:hover {
+  background: linear-gradient(90deg, #ff7b00 0%, #ffb800 100%);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

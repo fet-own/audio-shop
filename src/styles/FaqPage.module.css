@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main {
+    flex: 1;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.breadcrumbLink {
+    color: #666666;
+    text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbSeparator {
+    margin: 0 5px;
+}
+
+.breadcrumbs span {
+    font-weight: 400;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
